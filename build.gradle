@@ -23,11 +23,14 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web:3.2.1'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:3.2.1'
 
-    implementation 'org.springframework.data:spring-data-redis:3.2.1'
+    implementation 'io.lettuce:lettuce-core:6.3.1.RELEASE'
 
     implementation 'org.slf4j:slf4j-api:2.0.9'
     testImplementation 'org.slf4j:slf4j-log4j12:2.0.9'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:3.2.1'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
